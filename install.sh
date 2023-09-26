@@ -17,7 +17,7 @@ cp /etc/X11/xinit/xinitrc ~/.xinitrc
 sed -n '/twm &/q;p' ~/.xinitrc
 echo "exec i3" > ~/.xinitrc
 
-cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
+mkdir ~/.config/picom && cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
 
 mkdir ~/scripts
 
