@@ -1,4 +1,4 @@
-sudo pacman -Syu base-devel xorg-server xorg-xinit i3-wm sddm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus nitrogen firefox picom neofetch --noconfirm
+sudo pacman -Syu base-devel xorg-server xorg-xinit i3-wm sddm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus nitrogen firefox picom neofetch dotnet-runtime dotnet-sdk --noconfirm
 
 sudo systemctl enable --now bluetooth.service
 
