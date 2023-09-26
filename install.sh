@@ -15,10 +15,7 @@ sudo pacman -S --needed base-devel git && git clone https://aur.archlinux.org/ya
 yay -Syu betterlockscreen plex-media-server spotify jetbrains-toolbox visual-studio-code-bin php composer --nocleanmenu --nodiffmenu
 
 cp -a config/. ~/.config
-
-cp /etc/X11/xinit/xinitrc ~/.xinitrc
-sed -n '/twm &/q;p' ~/.xinitrc | tee ~/.xinitrc
-echo "exec i3" > ~/.xinitrc
+cp .xinitrc ~/.xinitrc
 
 mkdir ~/scripts
 
