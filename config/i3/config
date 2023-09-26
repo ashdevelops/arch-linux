@@ -189,7 +189,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id $HOME/lock.sh
+exec_always --no-startup-id $HOME/scripts/lock.sh
 exec_always --no-startup-id picom -b
 
 gaps inner 20
