@@ -13,6 +13,8 @@ yay -Syu plex-media-server spotify jetbrains-toolbox visual-studio-code-bin php 
 
 cp -a config/. ~/.config
 
-# sort xinitrc
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+sed -n '/twm &/q;p' ~/.xinitrc
+echo "exec i3" > ~/.xinitrc
 
 startx
