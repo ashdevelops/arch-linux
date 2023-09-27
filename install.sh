@@ -1,4 +1,4 @@
-sudo pacman -Syu base-devel xorg-server xorg-xinit i3-wm sddm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus nitrogen firefox picom neofetch dotnet-runtime dotnet-sdk --noconfirm
+sudo pacman -Syu base-devel xorg-server xorg-xinit i3-wm sddm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus nitrogen firefox picom neofetch dotnet-runtime dotnet-sdk ranger pulsemixer libpulse --noconfirm
 
 sudo systemctl enable --now bluetooth.service
 
@@ -14,8 +14,8 @@ systemctl daemon-reload
 sudo pacman -S --needed base-devel git && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu betterlockscreen plex-media-server spotify jetbrains-toolbox visual-studio-code-bin php composer --nocleanmenu --nodiffmenu
 
-cp -a config/. ~/.config
-cp .xinitrc ~/.xinitrc
+cp -a config/. ~/.config/
+cp ./.xinitrc ~/.xinitrc
 
 mkdir ~/scripts
 
