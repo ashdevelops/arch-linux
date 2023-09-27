@@ -10,7 +10,7 @@ echo "UUID=46BA9DEABA9DD6B1       /mnt/other-drive	ntfs	defaults,noatime,rw,nofa
 systemctl daemon-reload
 
 sudo pacman -S --needed base-devel git && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Syu betterlockscreen plex-media-server spotify jetbrains-toolbox visual-studio-code-bin php composer --nocleanmenu --nodiffmenu
+yay -Syu betterlockscreen plex-media-server spotify jetbrains-toolbox visual-studio-code-bin php composer --nocleanmenu --nodiffmenu --noconfirm
 
 cp -a config/. ~/.config/
 cp ./.xinitrc ~/.xinitrc
