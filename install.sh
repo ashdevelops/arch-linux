@@ -14,6 +14,7 @@ yay -Syu betterlockscreen plex-media-server spotify jetbrains-toolbox visual-stu
 
 cp -a config/. ~/.config/
 cp ./.xinitrc ~/.xinitrc
+cp -R wallpapers/ ~/wallpapers
 
 mkdir ~/scripts
 
