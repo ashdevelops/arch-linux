@@ -1,7 +1,5 @@
 sudo pacman -Syu base-devel xorg-server xorg-xinit i3-wm sddm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus nitrogen firefox picom neofetch dotnet-runtime dotnet-sdk ranger pulsemixer libpulse --noconfirm
 
-sudo systemctl enable --now bluetooth.service
-
 echo "xrandr --output HDMI-1 --right-of DP-1" | sudo tee -a /etc/X11/xinit/xinitrc.d/51-display-settings.sh
 echo "nitrogen --set-zoom --random ~/wallpapers --head=0 && nitrogen --set-zoom-fill --random ~/wallpapers --head=1" | sudo tee -a /etc/X11/xinit/xinitrc.d/52-wallpaper-settings.sh
 
@@ -18,5 +16,8 @@ cp -a config/. ~/.config/
 cp ./.xinitrc ~/.xinitrc
 
 mkdir ~/scripts
+
+sudo systemctl enable --now bluetooth.service
+sudo systemctl enable --now sddm.service
 
 startx
