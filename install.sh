@@ -10,6 +10,8 @@ cp -a config/. /home/ash/.config/
 cp .xinitrc /home/ash/.xinitrc
 cp -R wallpapers/ /home/ash/wallpapers
 
+sudo mkdir /mnt/other-drive
+
 echo "UUID=46BA9DEABA9DD6B1       /mnt/other-drive	ntfs	defaults,noatime,rw,nofail 0 3" | sudo tee -a /etc/fstab
 systemctl daemon-reload
 
