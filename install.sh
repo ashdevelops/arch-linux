@@ -20,7 +20,9 @@ echo "UUID=46BA9DEABA9DD6B1       /mnt/storage	ntfs	defaults,noatime,rw,nofail 0
 systemctl daemon-reload
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Syu jetbrains-toolbox php composer spotify betterlockscreen plex-media-server visual-studio-code-bin zsh oh-my-zsh-git --nocleanmenu --nodiffmenu --noconfirm
+yay -Syu jetbrains-toolbox php composer spotify betterlockscreen plex-media-server visual-studio-code-bin zsh --nocleanmenu --nodiffmenu --noconfirm
+
+sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now sddm.service
