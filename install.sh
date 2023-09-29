@@ -6,8 +6,11 @@ echo "export PATH=\"\$HOME/.config/composer/vendor/bin:\$PATH\"" | sudo tee -a /
 
 sudo chmod +x /etc/X11/xinit/xinitrc.d/*.sh
 
+mkdir ~/scripts ~/work ~/dev
+
 cp -a config/. /home/ash/.config/
 cp .xinitrc /home/ash/.xinitrc
+cp lock.sh /home/ash/scripts/lock.sh
 cp -R wallpapers/ /home/ash/wallpapers
 
 sudo mkdir /mnt/storage
@@ -17,8 +20,6 @@ systemctl daemon-reload
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu jetbrains-toolbox php composer spotify betterlockscreen plex-media-server visual-studio-code-bin zsh oh-my-zsh-git --nocleanmenu --nodiffmenu --noconfirm
-
-mkdir ~/scripts ~/work ~/dev
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now sddm.service
