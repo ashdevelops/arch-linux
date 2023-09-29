@@ -1,7 +1,5 @@
 base
 base-devel
-xorg-server
-xorg-xinit
 hyprland
 ntfs-3g
 git
