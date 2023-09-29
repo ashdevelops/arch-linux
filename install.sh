@@ -1,4 +1,4 @@
-sudo pacman -Syu base base-devel xorg-server xorg-xinit i3-wm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus firefox neofetch htop discord flameshot gnome-keyring nitrogen ranger dotnet-runtime dotnet-sdk sddm pulse-mixer libpulse --noconfirm
+sudo pacman -Syu base base-devel xorg-server xorg-xinit i3-wm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus firefox neofetch htop discord flameshot gnome-keyring nitrogen ranger dotnet-runtime dotnet-sdk sddm pulse-mixer libpulse pipewire pipewire-pulse --noconfirm
 # non-essential: picom
 
 echo "xrandr --output HDMI-1 --left-of DP-1" | sudo tee -a /etc/X11/xinit/xinitrc.d/51-display-settings.sh
