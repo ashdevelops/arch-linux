@@ -1,5 +1,5 @@
-sudo pacman -Syu base base-devel xorg-server xorg-xinit i3-wm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus firefox neofetch htop discord flameshot gnome-keyring nitrogen ranger --noconfirm
-# non-essential: sddm dotnet-runtime dotnet-sdk pulse-mixer libpulse picom
+sudo pacman -Syu base base-devel xorg-server xorg-xinit i3-wm ntfs-3g git nano rofi polybar dunst blueman bluez bluez-utils kitty nautilus firefox neofetch htop discord flameshot gnome-keyring nitrogen ranger dotnet-runtime dotnet-sdk --noconfirm
+# non-essential: sddm pulse-mixer libpulse picom
 
 echo "xrandr --output HDMI-1 --left-of DP-1" | sudo tee -a /etc/X11/xinit/xinitrc.d/51-display-settings.sh
 echo "nitrogen --set-zoom --random ~/wallpapers --head=0 && nitrogen --set-zoom-fill --random ~/wallpapers --head=1" | sudo tee -a /etc/X11/xinit/xinitrc.d/52-wallpaper-settings.sh
