@@ -4,14 +4,15 @@ echo "xrandr --output HDMI-1 --left-of DP-1" | sudo tee -a /etc/X11/xinit/xinitr
 echo "nitrogen --set-zoom --random ~/wallpapers --head=0 && nitrogen --set-zoom-fill --random ~/wallpapers --head=1" | sudo tee -a /etc/X11/xinit/xinitrc.d/52-wallpaper-settings.sh
 echo "export PATH=\"\$HOME/.config/composer/vendor/bin:\$PATH\"" | sudo tee -a /etc/X11/xinit/xinitrc.d/53-environment-variables.sh
 
-sudo chmod +x /etc/X11/xinit/xinitrc.d/*.sh
-
 mkdir ~/scripts ~/work ~/dev
 
 cp -a config/. /home/ash/.config/
 cp .xinitrc /home/ash/.xinitrc
 cp lock.sh /home/ash/scripts/lock.sh
 cp -R wallpapers/ /home/ash/wallpapers
+
+sudo chmod +x /etc/X11/xinit/xinitrc.d/*.sh
+sudo chmod +x /home/ash/scripts
 
 sudo mkdir /mnt/storage
 
