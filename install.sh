@@ -28,4 +28,4 @@ sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now sddm.service
 sudo systemctl enable --now plexmediaserver
 
-reboot
+echo "Script finished"
