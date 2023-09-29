@@ -18,7 +18,7 @@ systemctl daemon-reload
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu jetbrains-toolbox php composer spotify betterlockscreen plex-media-server visual-studio-code-bin zsh oh-my-zsh-git --nocleanmenu --nodiffmenu --noconfirm
 
-mkdir ~/scripts
+mkdir ~/scripts ~/work ~/dev
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now sddm.service
