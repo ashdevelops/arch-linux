@@ -8,7 +8,7 @@ mkdir ~/scripts ~/work ~/dev
 
 cp -a config/. /home/ash/.config/
 cp .xinitrc /home/ash/.xinitrc
-cp lock.sh /home/ash/scripts/lock.sh
+cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
 
 sudo chmod +x /etc/X11/xinit/xinitrc.d/*.sh
