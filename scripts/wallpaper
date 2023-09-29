@@ -1,7 +1,7 @@
 #!/bin/bash
 
-RANDOM=$(ls ~/wallpapers | shuf -n 1)
-RANDOM2=$(ls ~/wallpapers | shuf -n 1)
+RBG1=$(ls ~/wallpapers | shuf -n 1)
+RBG2=$(ls ~/wallpapers | shuf -n 1)
 
-hyprctl hyprpaper wallpaper "HDMI-1,~/wallpapers/$RANDOM2"
-hyprctl hyprpaper wallpaper "DP-1,~/wallpapers/$RANDOM2"
+hyprctl hyprpaper wallpaper "HDMI-A-1,~/wallpapers/$RBG1"
+hyprctl hyprpaper wallpaper "DP-1,~/wallpapers/$RBG2"
