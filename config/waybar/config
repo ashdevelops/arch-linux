@@ -1,31 +1,11 @@
 {
     "output": "HDMI-A-1",
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad", "custom/media"],
+    "height": 35,
+    "spacing": 0,
+    "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["idle_inhibitor", "pulseaudio", "cpu", "memory", "keyboard-state", "hyprland/language", "clock", "tray"],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -53,7 +33,6 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
         "spacing": 2
     },
     "clock": {
@@ -70,7 +49,7 @@
         "format": "{}% "
     },
     "pulseaudio": {
-        "scroll-step": 2, // %, can be a float
+        "scroll-step": 2,
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -87,18 +66,6 @@
             "default": ["", "", ""]
         },
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-    },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }
 
