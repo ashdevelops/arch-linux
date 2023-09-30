@@ -26,6 +26,7 @@ sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
 sudo systemctl enable sddm.service
 
+timedatectl set-timezone Europe/London
 sudo usermod -a -G input $USER
 
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
