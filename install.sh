@@ -14,7 +14,7 @@ echo "UUID=46BA9DEABA9DD6B1       /mnt/storage	ntfs	defaults,noatime,rw,nofail 0
 systemctl daemon-reload
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Syu jetbrains-toolbox php composer spotify plex-media-server visual-studio-code-bin zsh vlc waybar-git --nocleanmenu --nodiffmenu --noconfirm
+yay -Syu jetbrains-toolbox php composer spotify plex-media-server visual-studio-code-bin zsh vlc waybar-git swaylock-effects --nocleanmenu --nodiffmenu --noconfirm
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
