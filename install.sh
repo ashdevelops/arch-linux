@@ -3,7 +3,6 @@ sudo pacman -Syu --noconfirm - < pkglist
 mkdir ~/scripts ~/work ~/dev ~/screenshots
 
 cp -a config/. /home/ash/.config/
-cp .xinitrc /home/ash/.xinitrc
 cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
 
