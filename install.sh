@@ -22,8 +22,8 @@ sudo systemctl enable sddm.service
 
 timedatectl set-timezone Europe/London
 sudo usermod -a -G input $USER
-chsh -s $(which zsh)
-echo "neofetch" >> ~/.zshrc
 
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "neofetch" >> ~/.zshrc
+
 echo "Script finished - suggesting you reboot..."
