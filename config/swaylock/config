@@ -1,0 +1,10 @@
+screenshot
+indicator
+effect-blur=10x10
+clock
+indicator-radius=100
+inside-color=000000
+
+fae-in=0.3
+datestr=%a, %B %e
+timestr=%I:%M %p
