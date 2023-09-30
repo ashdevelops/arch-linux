@@ -16,7 +16,6 @@ firefox
 neofetch
 htop
 discord
-flameshot
 gnome-keyring
 ranger
 dotnet-runtime
@@ -26,3 +25,4 @@ libpulse
 pipewire
 pipewire-pulse
 feh
+otf-font-awesome
