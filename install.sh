@@ -6,8 +6,7 @@ cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
 
-sudo chmod +x /etc/X11/xinit/xinitrc.d/*.sh
-sudo chmod +x /home/ash/scripts/*.sh
+sudo chmod +x /home/ash/scripts/*
 
 sudo mkdir /mnt/storage
 
