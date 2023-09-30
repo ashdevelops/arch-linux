@@ -23,6 +23,8 @@ sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/insta
 
 echo "neofetch" >> ~/.zshrc
 
+echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
+
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
 sudo systemctl enable --now sddm.service
