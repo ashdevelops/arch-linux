@@ -1,5 +1,5 @@
 {
-    "output": "HDMI-A-1",
+    "layer": "top",
     "height": 35,
     "spacing": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
