@@ -22,10 +22,10 @@ systemctl daemon-reload
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu jetbrains-toolbox php composer spotify plex-media-server visual-studio-code-bin zsh vlc waybar-git --nocleanmenu --nodiffmenu --noconfirm
 
+sudo systemctl enable --now bluetooth.service
+sudo systemctl enable --now plexmediaserver
+sudo systemctl enable sddm.service
+
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-sudo systemctl enable --now bluetooth.service
-sudo systemctl enable --now sddm.service
-sudo systemctl enable --now plexmediaserver
-
-echo "Script finished"
+echo "Script finished - suggesting you reboot..."
