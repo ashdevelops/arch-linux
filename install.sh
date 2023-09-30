@@ -26,6 +26,8 @@ sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
 sudo systemctl enable sddm.service
 
+sudo usermod -a -G input $USER
+
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Script finished - suggesting you reboot..."
