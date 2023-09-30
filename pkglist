@@ -25,6 +25,7 @@ sddm
 libpulse
 pipewire
 pipewire-pulse
+pavucontrol
 feh
 otf-font-awesome
 wl-copy
