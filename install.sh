@@ -1,4 +1,5 @@
 echo "KEYMAP=uk" | sudo tee -a /etc/vconsole.conf
+localectl --no-convert set-x11-keymap uk pc104 ,dvorak grp:win_space_toggle
 
 sudo pacman -Syu --noconfirm - < pkglist
 
