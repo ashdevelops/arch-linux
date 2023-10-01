@@ -21,7 +21,7 @@ echo "UUID=46BA9DEABA9DD6B1       /mnt/storage	ntfs	defaults,noatime,rw,nofail 0
 systemctl daemon-reload
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Syu jetbrains-toolbox php composer spotify plex-media-server visual-studio-code-bin zsh vlc waybar-git swaylock-effects hyprpaper cava-git --nocleanmenu --nodiffmenu --noconfirm
+yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects hyprpaper cava-git --nocleanmenu --nodiffmenu --noconfirm
 
 timedatectl set-timezone Europe/London
 sudo usermod -a -G input $USER
