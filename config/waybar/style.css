@@ -4,27 +4,12 @@
 }
 
 window#waybar {
-    background-color: black;
+    background-color: rgb(19, 19, 19);
     color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
 }
-
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: #1b1b1b;
 }
 
 window#waybar.chromium {
@@ -87,8 +72,11 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    padding: 0 10px;
+    margin: 5px 7px;
+    padding: 8px 20px;
+    border-radius: 4px;
     color: #ffffff;
+    background-color: red;
 }
 
 #window,
@@ -252,19 +240,12 @@ label:focus {
     min-width: 16px;
 }
 
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    min-width: 16px;
-}
-
 #keyboard-state > label {
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
 #keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: red;
 }
 
 #scratchpad {
@@ -273,24 +254,4 @@ label:focus {
 
 #scratchpad.empty {
 	background-color: transparent;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#tray {
-    padding-right: 10px;
 }
