@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 echo ""
 
-QUOTE=$(curl -s 'https://api.quotable.io/random')
+QUOTE=$(curl -s 'https://api.quotable.io/random?author=Socrates|Epictetus|Sigmund-Freud|Plato|Marcus-Aurelius')
 QUOTE_AUTHOR=$(echo $QUOTE | jq -r '.author')
 QUOTE_CONTENT=$(echo $QUOTE | jq -r '.content')
 
