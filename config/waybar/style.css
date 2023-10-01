@@ -76,7 +76,7 @@ button {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    margin: 5px 7px;
+    margin: 5px 4px;
     padding: 8px 20px;
     border-radius: 4px;
     color: #ffffff;
@@ -243,6 +243,10 @@ label:focus {
     padding: 0 15px;
 }
 
+#keyboard-state > label.active {
+    background-color:red;
+}
+
 #scratchpad {
     background: rgba(0, 0, 0, 0.2);
 }
@@ -253,4 +257,10 @@ label:focus {
 
 #tray {
     background-color: rgb(84, 84, 223)
+}
+
+#keyboard-state > label.locked {
+    background-color: red;
+    border-radius: 4px;
+    margin:5px;
 }
