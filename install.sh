@@ -3,6 +3,8 @@ localectl --no-convert set-x11-keymap gb pc104 ,dvorak grp:win_space_toggle
 
 sudo pacman -Syu --noconfirm - < pkglist
 
+sudo modprobe vboxdrv
+
 mkdir ~/scripts ~/work ~/dev ~/screenshots
 
 cp -a config/. /home/ash/.config/
