@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sleep 0.6
+sleep 0.1
 
 RBG1=$(ls ~/wallpapers | shuf -n 1)
 RBG2=$(ls ~/wallpapers | shuf -n 1)
