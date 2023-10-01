@@ -26,20 +26,24 @@ button {
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+#workspaces {
+    padding-left:10px;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    padding-left: 5px;
+    margin: 6px 4px;
     background-color: transparent;
     color: #ffffff;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#workspaces button.active {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    color: black
 }
 
 #workspaces button.focused {
@@ -76,7 +80,6 @@ button:hover {
     padding: 8px 20px;
     border-radius: 4px;
     color: #ffffff;
-    background-color: red;
 }
 
 #window,
@@ -195,10 +198,6 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-#tray {
-    background-color: #2980b9;
-}
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
@@ -244,14 +243,14 @@ label:focus {
     padding: 0 15px;
 }
 
-#keyboard-state > label.locked {
-    background-color: red;
-}
-
 #scratchpad {
     background: rgba(0, 0, 0, 0.2);
 }
 
 #scratchpad.empty {
 	background-color: transparent;
+}
+
+#tray {
+    background-color: rgb(84, 84, 223)
 }
