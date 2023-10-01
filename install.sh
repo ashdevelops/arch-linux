@@ -5,6 +5,7 @@ mkdir ~/scripts ~/work ~/dev ~/screenshots
 cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
+cp other/.zshrc /home/ash/.zshrc
 
 sudo chmod +x /home/ash/scripts/*
 
