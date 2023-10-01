@@ -1,3 +1,5 @@
+echo "KEYMAP=uk" | sudo tee -a /etc/vconsole.conf
+
 sudo pacman -Syu --noconfirm - < pkglist
 
 mkdir ~/scripts ~/work ~/dev ~/screenshots
