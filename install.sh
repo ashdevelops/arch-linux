@@ -1,5 +1,5 @@
 echo "KEYMAP=gb" | sudo tee -a /etc/vconsole.conf
-localectl --no-convert set-x11-keymap gb pc104 ,dvorak grp:win_space_toggle
+localectl --no-convert set-x11-keymap gb pc104
 
 sudo pacman -Syu --noconfirm - < pkglist
 
