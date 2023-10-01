@@ -6,3 +6,4 @@ echo $IMG
 SAVED=$($HOME/scripts/imgur $IMG)
 notify-send "Screenshot Saved" $SAVED
 wl-copy $SAVED
+rm $IMG
