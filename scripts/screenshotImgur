@@ -1,9 +1,0 @@
-#!/bin/bash
-
-IMG=~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png 
-grim -g "$(slurp)" $IMG 
-echo $IMG
-SAVED=$($HOME/scripts/imgur $IMG)
-notify-send "Screenshot Saved" $SAVED
-wl-copy $SAVED
-rm $IMG
