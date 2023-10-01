@@ -22,6 +22,8 @@ sudo usermod -a -G input $USER
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "neofetch" >> ~/.zshrc
+echo "export PATH=\$PATH:\"\$HOME/.local/share/JetBrains/Toolbox/scripts\"" >> ~/.zshrc
+echo "export PATH=\$PATH:\"\$HOME/scripts\"" >> ~/.zshrc
 
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
 
