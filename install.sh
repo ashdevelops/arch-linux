@@ -27,6 +27,8 @@ echo "export PATH=\$PATH:\"\$HOME/scripts\"" >> ~/.zshrc
 
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
 
+wget https://raw.githubusercontent.com/tremby/imgur.sh/main/imgur.sh -O ~/scripts/imgur
+
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
 sudo systemctl enable --now sddm.service
