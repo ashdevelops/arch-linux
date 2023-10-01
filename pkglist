@@ -38,3 +38,5 @@ yt-dlp
 cowsay
 jq
 virtualbox
+usbmuxd
+libimobiledevice
