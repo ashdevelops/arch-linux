@@ -11,6 +11,7 @@ cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
 cp other/.zshrc /home/ash/.zshrc
+sudo cp other/hyprpaper.service etc/systemd/system/hyprpaper.service
 
 sudo chmod +x /home/ash/scripts/*
 
