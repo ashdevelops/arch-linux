@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 RBG1=$(ls ~/wallpapers | shuf -n 1)
-RBG2=$(ls ~/wallpapers | shuf -n 1)
 
 swww init
 swww img -o HDMI-A-1 ~/wallpapers/$RBG1 --transition-step 255
-swww img -o DP-1 ~/wallpapers/$RBG2 --transition-step 255
+swww img -o DP-1 ~/wallpapers/$RBG1 --transition-step 255
