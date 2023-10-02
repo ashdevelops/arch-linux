@@ -43,3 +43,4 @@ libimobiledevice
 ifuse
 virtualbox-guest-iso
 code
+wget
