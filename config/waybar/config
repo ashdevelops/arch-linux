@@ -5,7 +5,7 @@
     "spacing": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "cpu", "memory", "keyboard-state", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "disk", "pulseaudio", "cpu", "memory", "keyboard-state", "clock", "tray"],
 
     "hyprland/workspaces": {
         "all-outputs": true
@@ -20,6 +20,13 @@
             "unlocked": ""
         }
     },
+
+    "disk": {
+        "interval": 30,
+        "format": "{percentage_free}% free on {path}",
+        "path": "/mnt/storage"
+    },
+
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
