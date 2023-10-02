@@ -11,7 +11,6 @@ cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
 cp other/.zshrc /home/ash/.zshrc
-sudo cp other/hyprpaper.service etc/systemd/system/hyprpaper.service
 
 sudo chmod +x /home/ash/scripts/*
 
@@ -21,7 +20,7 @@ echo "UUID=46BA9DEABA9DD6B1       /mnt/storage	ntfs	defaults,noatime,rw,nofail 0
 systemctl daemon-reload
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects hyprpaper cava-git --nocleanmenu --nodiffmenu --noconfirm
+yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects swww cava-git --nocleanmenu --nodiffmenu --noconfirm
 
 timedatectl set-timezone Europe/London
 sudo usermod -a -G input $USER
