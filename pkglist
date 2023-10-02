@@ -40,4 +40,6 @@ jq
 virtualbox
 usbmuxd
 libimobiledevice
+ifuse
+virtualbox-guest-iso
 code
