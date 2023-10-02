@@ -4,6 +4,7 @@ localectl --no-convert set-x11-keymap gb pc104
 sudo pacman -Syu --noconfirm - < pkglist
 
 sudo modprobe vboxdrv
+sudo adduser $USER vboxusers
 
 mkdir ~/scripts ~/work ~/dev ~/screenshots
 
