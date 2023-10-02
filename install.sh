@@ -22,6 +22,7 @@ systemctl daemon-reload
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects swww cava-git --nocleanmenu --nodiffmenu --noconfirm
 
+swww init
 timedatectl set-timezone Europe/London
 sudo usermod -a -G input $USER
 
