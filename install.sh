@@ -11,7 +11,6 @@ mkdir ~/scripts ~/work ~/dev ~/screenshots
 cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
 cp -R wallpapers/ /home/ash/wallpapers
-cp other/.zshrc /home/ash/.zshrc
 
 sudo chmod +x /home/ash/scripts/*
 
@@ -35,6 +34,8 @@ echo "export PATH=\$PATH:\"\$HOME/scripts\"" >> ~/.zshrc
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
 
 wget https://raw.githubusercontent.com/tremby/imgur.sh/main/imgur.sh -O ~/scripts/imgur
+
+cp other/.zshrc /home/ash/.zshrc
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
