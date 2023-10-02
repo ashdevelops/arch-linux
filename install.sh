@@ -10,6 +10,7 @@ mkdir ~/scripts ~/work ~/dev ~/screenshots
 
 cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
+wget https://raw.githubusercontent.com/tremby/imgur.sh/main/imgur.sh -O ~/scripts/imgur
 cp -R wallpapers/ /home/ash/wallpapers
 
 sudo chmod +x /home/ash/scripts/*
@@ -32,8 +33,6 @@ echo "export PATH=\$PATH:\"\$HOME/.local/share/JetBrains/Toolbox/scripts\"" >> ~
 echo "export PATH=\$PATH:\"\$HOME/scripts\"" >> ~/.zshrc
 
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
-
-wget https://raw.githubusercontent.com/tremby/imgur.sh/main/imgur.sh -O ~/scripts/imgur
 
 cp other/.zshrc /home/ash/.zshrc
 
