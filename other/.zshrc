@@ -6,15 +6,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-echo ""
-
-QUOTE=$(curl -s 'https://api.quotable.io/random?author=Socrates|Epictetus|Sigmund-Freud|Plato|Marcus-Aurelius')
-QUOTE_AUTHOR=$(echo $QUOTE | jq -r '.author')
-QUOTE_CONTENT=$(echo $QUOTE | jq -r '.content')
-
-neofetch --ascii "$(cowsay -W 30 "$QUOTE_CONTENT 
-
-- $QUOTE_AUTHOR")"
+neofetch
 
 export PATH=$PATH:"$HOME/.local/share/JetBrains/Toolbox/scripts"
 export PATH=$PATH:"$HOME/scripts"
