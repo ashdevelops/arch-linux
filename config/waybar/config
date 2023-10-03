@@ -5,7 +5,7 @@
     "spacing": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["disk", "disk#primary", "keyboard-state", "wireplumber", "cpu", "memory", "tray", "clock", "custom/power"],
+    "modules-right": ["disk", "disk#primary", "custom/screen-record", "keyboard-state", "wireplumber", "cpu", "memory", "tray", "clock", "custom/power"],
 
     "hyprland/workspaces": {
         "all-outputs": true
@@ -48,8 +48,8 @@
     "clock": {
         "interval": 1,
         "tooltip-format": "{:%A %d %B %H:%M:%S}",
-        "format": "{:%H:%M:%S}",
-        "format-alt": "{:%A %d %B %H:%M:%S}"
+        "format": " {:%H:%M:%S}",
+        "format-alt": " {:%A %d %B %H:%M:%S}"
     },
 
     "cpu": {
@@ -57,7 +57,7 @@
     },
 
     "memory": {
-        "format": "  {}%"
+        "format": "  {}%"
     },
     
     "wireplumber": {
@@ -71,12 +71,15 @@
 
     "custom/power": {
         "format": "",
-        "on-click": "wlogout"
+        "on-click": "wlogout",
+        "tooltip": false
     },
 
-    "custom/testing": {
+    "custom/screen-record": {
         "format": "{}",
-        "interval": 5,
-        "exec": "/home/ash/scripts/stest.sh"
+        "interval": 1,
+        "exec": "$HOME/scripts/recordStatus",
+        "on-click": "$HOME/scripts/record",
+        "tooltip": false
     }
 }
