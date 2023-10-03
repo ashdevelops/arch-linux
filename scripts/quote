@@ -1,0 +1,7 @@
+#!/bin/bash
+
+QUOTE=$(curl -s 'https://api.quotable.io/random?author=Socrates|Epictetus|Sigmund-Freud|Plato|Marcus-Aurelius')
+QUOTE_AUTHOR=$(echo $QUOTE | jq -r '.author')
+QUOTE_CONTENT=$(echo $QUOTE | jq -r '.content')
+
+zenity --info --text="$QUOTE_CONTENT\n\n- $QUOTE_AUTHOR" --width 400
