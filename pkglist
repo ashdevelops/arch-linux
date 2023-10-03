@@ -24,6 +24,7 @@ sddm
 libpulse
 pipewire
 pipewire-pulse
+pipewire-alsa
 pavucontrol
 feh
 otf-font-awesome
