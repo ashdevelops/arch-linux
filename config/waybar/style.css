@@ -62,14 +62,9 @@ button {
 }
 
 #clock,
-#battery,
 #cpu,
 #memory,
 #disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
 #wireplumber,
 #custom-media,
 #tray,
@@ -77,9 +72,10 @@ button {
 #idle_inhibitor,
 #keyboard-state
 #scratchpad,
-#mpd {
+#mpd,
+#custom-power {
     margin: 5px 4px;
-    padding: 8px 20px;
+    padding: 8px 15px;
     border-radius: 4px;
     color: #ffffff;
 }
@@ -99,31 +95,11 @@ button {
     margin-right: 0;
 }
 
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
 @keyframes blink {
     to {
         background-color: #ffffff;
         color: #000000;
     }
-}
-
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 label:focus {
@@ -136,7 +112,8 @@ label:focus {
 #wireplumber,
 #cpu,
 #keyboard-state > label:not(.locked),
-#memory {
+#memory,
+#custom-power {
     background-color: #444444;
 }
 
