@@ -6,7 +6,7 @@ sudo pacman -Syu --noconfirm - < pkglist
 sudo modprobe vboxdrv
 sudo adduser $USER vboxusers
 
-mkdir ~/scripts ~/work ~/dev ~/screenshots
+mkdir ~/scripts ~/work ~/dev ~/recordings
 
 cp -a config/. /home/ash/.config/
 cp -a scripts/. /home/ash/scripts/
