@@ -45,3 +45,4 @@ ifuse
 virtualbox-guest-iso
 code
 wget
+xdg-desktop-portal-wlr
