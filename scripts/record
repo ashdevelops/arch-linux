@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if pgrep -x "wf-recorder" > /dev/null
+then
+    killall -s SIGINT wf-recorder
+    FILE=$(ls -t $RECORDPATH | head -n1)
+    notify-send "Screen Recording Complete" "Saved to $FILE"
+    wl-copy $FILE
+	while [ ! -z $(pgrep -x wf-recorder) ]; do wait; done
+	pkill -RTMIN+8 waybar
+    exit
+fi
+
+if ! zenity --question --text="Are you sure you want to start recording?"; then
+    exit
+fi
+
+FILENAME=$(date +%F_%T.mkv)
+
+wf-recorder -f $HOME/recordings/$FILENAME -g "$(slurp -c "#FFFFFF")" >/dev/null 2>&1 &
