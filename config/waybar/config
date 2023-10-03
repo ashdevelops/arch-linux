@@ -63,7 +63,7 @@
     
     "wireplumber": {
         "format": "{icon} {volume}%",
-        "format-muted": " ",
+        "format-muted": "",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "format-icons": [" ", " ", " "],
         "max-volume": 150,
