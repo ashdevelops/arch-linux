@@ -32,8 +32,9 @@ button {
 
 #workspaces button {
     margin: 6px 4px;
-    background-color: transparent;
+    background-color: #444444;
     color: #ffffff;
+    border-radius: 4px;
 }
 
 #workspaces button:hover {
