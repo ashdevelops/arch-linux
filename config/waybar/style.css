@@ -74,7 +74,8 @@ button {
 #scratchpad,
 #mpd,
 #custom-power,
-#custom-screen-record {
+#custom-screen-record,
+#custom-habit-days {
     margin: 5px 4px;
     padding: 8px 15px;
     border-radius: 4px;
@@ -117,6 +118,10 @@ label:focus {
 #custom-power,
 #custom-screen-record {
     background-color: #444444;
+}
+
+#custom-habit-days {
+    background-color:#730f8f;
 }
 
 #backlight {
