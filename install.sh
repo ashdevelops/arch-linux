@@ -19,6 +19,7 @@ sudo mkdir /mnt/storage
 
 echo "UUID=46BA9DEABA9DD6B1       /mnt/storage	ntfs	defaults,noatime,rw,nofail 0 3" | sudo tee -a /etc/fstab
 systemctl daemon-reload
+sudo mount -a
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects swww cava-git --nocleanmenu --nodiffmenu --noconfirm
@@ -35,6 +36,12 @@ echo "export PATH=\$PATH:\"\$HOME/scripts\"" >> ~/.zshrc
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
 
 cp other/.zshrc /home/ash/.zshrc
+
+cp -R /mnt/storage/ssh-backup ~/.ssh
+sudo chmod -R 600 ~/.ssh/work*  ~/.ssh/personal* 
+
+git config --global user.name "ashdevelops"
+git config --global user.email "ash.smith.dev@gmail.com"
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
