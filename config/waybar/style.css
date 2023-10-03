@@ -73,7 +73,8 @@ button {
 #keyboard-state
 #scratchpad,
 #mpd,
-#custom-power {
+#custom-power,
+#custom-screen-record {
     margin: 5px 4px;
     padding: 8px 15px;
     border-radius: 4px;
@@ -113,7 +114,8 @@ label:focus {
 #cpu,
 #keyboard-state > label:not(.locked),
 #memory,
-#custom-power {
+#custom-power,
+#custom-screen-record {
     background-color: #444444;
 }
 
