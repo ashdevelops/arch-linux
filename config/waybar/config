@@ -5,7 +5,7 @@
     "spacing": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["disk", "disk#primary", "idle_inhibitor", "pulseaudio", "cpu", "memory", "keyboard-state", "clock", "tray"],
+    "modules-right": ["disk", "disk#primary", "keyboard-state", "wireplumber", "cpu", "memory", "clock", "tray"],
 
     "hyprland/workspaces": {
         "all-outputs": true
@@ -41,14 +41,6 @@
         "tooltip-format": "{app}: {title}"
     },
 
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-
     "tray": {
         "spacing": 12
     },
@@ -68,27 +60,13 @@
     "memory": {
         "format": "{}% "
     },
-
-    "pulseaudio": {
-        "scroll-step": 2,
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "max-volume": 90,
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "ignored-sinks": ["alsa_output.usb-Generic_USB_Audio-00.HiFi__hw_Audio_1__sink"]
+    
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "format-icons": [" ", " ", " "],
+        "max-volume": 150,
+        "scroll-step": 2
     }
 }
-
