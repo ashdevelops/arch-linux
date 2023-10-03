@@ -13,13 +13,13 @@
 
     "disk": {
         "interval": 30,
-        "format": "{percentage_free}% free on {path}",
+        "format": "{path}",
         "path": "/mnt/storage"
     },
 
     "disk#primary": {
         "interval": 30,
-        "format": "{percentage_free}% free on {path}",
+        "format": "{path}",
         "path": "/"
     },
 
