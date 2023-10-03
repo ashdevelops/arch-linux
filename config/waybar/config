@@ -5,7 +5,7 @@
     "spacing": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["disk", "disk#primary", "keyboard-state", "wireplumber", "cpu", "memory", "clock", "tray"],
+    "modules-right": ["disk", "disk#primary", "keyboard-state", "wireplumber", "cpu", "memory", "tray", "clock", "custom/power"],
 
     "hyprland/workspaces": {
         "all-outputs": true
@@ -26,7 +26,7 @@
     "keyboard-state": {
         "numlock": false,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
@@ -47,18 +47,17 @@
 
     "clock": {
         "interval": 1,
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "{:%A %d %B %H:%M:%S}",
         "format": "{:%H:%M:%S}",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%A %d %B %H:%M:%S}"
     },
 
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "  {usage}%"
     },
 
     "memory": {
-        "format": "{}% "
+        "format": "  {}%"
     },
     
     "wireplumber": {
@@ -68,5 +67,16 @@
         "format-icons": [" ", " ", " "],
         "max-volume": 150,
         "scroll-step": 2
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout"
+    },
+
+    "custom/testing": {
+        "format": "{}",
+        "interval": 5,
+        "exec": "/home/ash/scripts/stest.sh"
     }
 }
