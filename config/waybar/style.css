@@ -137,7 +137,7 @@ label:focus {
 #cpu,
 #keyboard-state > label:not(.locked),
 #memory {
-    background-color: #616161;
+    background-color: #444444;
 }
 
 #backlight {
