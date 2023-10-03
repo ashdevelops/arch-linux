@@ -75,6 +75,7 @@ button {
 #tray,
 #mode,
 #idle_inhibitor,
+#keyboard-state
 #scratchpad,
 #mpd {
     margin: 5px 4px;
@@ -96,10 +97,6 @@ button {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#clock {
-    background-color: #64727D;
 }
 
 #battery {
@@ -133,17 +130,14 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
+#disk,
+#tray,
+#clock,
+#wireplumber,
+#cpu,
+#keyboard-state > label:not(.locked),
 #memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #2d3436;
+    background-color: #616161;
 }
 
 #backlight {
@@ -166,11 +160,6 @@ label:focus {
 #pulseaudio.muted {
     background-color: #90b1b1;
     color: #2a5c45;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
 }
 
 #wireplumber.muted {
@@ -196,7 +185,7 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: #f53c3c;
 }
 
 #tray > .passive {
@@ -206,15 +195,6 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
-}
-
-#idle_inhibitor {
-    background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
 }
 
 #mpd {
@@ -241,7 +221,10 @@ label:focus {
 }
 
 #keyboard-state > label {
-    padding: 0 15px;
+    margin: 6px;
+    padding: 8px;
+    padding-left: 20px; padding-right: 20px;
+    border-radius: 4px;
 }
 
 #keyboard-state > label.active {
@@ -256,12 +239,6 @@ label:focus {
 	background-color: transparent;
 }
 
-#tray {
-    background-color: rgb(84, 84, 223)
-}
-
 #keyboard-state > label.locked {
-    background-color: red;
-    border-radius: 4px;
-    margin:5px;
+    background-color: #f53c3c;
 }
