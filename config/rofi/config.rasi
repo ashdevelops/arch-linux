@@ -1,0 +1,23 @@
+configuration {
+    modi:                       "drun,run";
+    font:                       "Nunito 16";
+    show-icons:                 true;
+    display-drun:               "Open:";
+    display-run:                "Run";
+    display-filebrowser:        "FILES";
+    display-window:             "WINDOW";
+	drun-display-format:        "{name}";
+    hover-select:               true;
+    me-select-entry:            "";
+    me-accept-entry:            "MousePrimary";
+    
+}
+
+window {
+    width: 600px;
+    height: 300px;   
+}
+
+inputbar {
+    padding:                      5px;
+}
