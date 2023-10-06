@@ -45,7 +45,7 @@ code
 wget
 xdg-desktop-portal-wlr
 wf-recorder
-gvim
+vim
 aria2 
 xdg-desktop-portal
 xdg-desktop-portal-wlr
