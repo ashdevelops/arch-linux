@@ -25,7 +25,6 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects swww cava-git wlogout google-chrome --nocleanmenu --nodiffmenu --noconfirm
 
 timedatectl set-timezone Europe/London
-sudo usermod -a -G input $USER
 
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
