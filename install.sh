@@ -1,3 +1,5 @@
+sudo pacman -Rns vim
+
 echo "KEYMAP=gb" | sudo tee -a /etc/vconsole.conf
 localectl --no-convert set-x11-keymap gb pc104
 
