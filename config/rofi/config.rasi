@@ -1,6 +1,6 @@
 configuration {
     modi:                       "drun,run";
-    font:                       "Nunito 16";
+    font:                       "Nunito 14";
     show-icons:                 true;
     display-drun:               "Open:";
     display-run:                "Run";
