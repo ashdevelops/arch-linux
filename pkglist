@@ -18,6 +18,7 @@ gnome-keyring
 ranger
 dotnet-runtime
 dotnet-sdk
+aspnet-runtime
 sddm
 libpulse
 pipewire
