@@ -38,6 +38,7 @@ echo "export PATH=\$PATH:\"\$HOME/scripts\"" >> ~/.zshrc
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
 
 cp other/.zshrc /home/ash/.zshrc
+cp other/.vimrc /home/ash/.vimrc
 
 cp -R /mnt/storage/ssh-backup ~/.ssh
 sudo chmod -R 600 ~/.ssh/work*  ~/.ssh/personal* 
