@@ -20,7 +20,7 @@ sudo chmod +x /home/ash/scripts/*
 
 sudo mkdir /mnt/storage
 
-echo "UUID=46BA9DEABA9DD6B1       /mnt/storage	ntfs	defaults,noatime,rw,nofail 0 3" | sudo tee -a /etc/fstab
+echo "/dev/disk/by-uuid/eab3b3c5-7473-4308-bf3a-633def59c06c /mnt/storage auto nosuid,nodev,nofail,x-gvfs-show 0 0" | sudo tee -a /etc/fstab
 systemctl daemon-reload
 sudo mount -a
 
