@@ -11,13 +11,13 @@
     },
 
     "disk": {
-        "interval": 30,
+        "interval": 5,
         "format": "{path}",
         "path": "/mnt/storage"
     },
 
     "disk#primary": {
-        "interval": 30,
+        "interval": 5,
         "format": "{path}",
         "path": "/"
     },
