@@ -47,3 +47,5 @@ sudo systemctl enable --now plexmediaserver
 # sudo chmod -R 600 ~/.ssh/work*  ~/.ssh/personal* 
 
 sudo systemctl enable --now sddm.service
+
+# sudo /usr/bin/mysql_secure_installation
