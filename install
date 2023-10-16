@@ -6,8 +6,6 @@ localectl --no-convert set-x11-keymap gb pc104
 
 sudo pacman -Syu --noconfirm - < pkglist
 
-sudo modprobe vboxdrv
-
 mkdir -p ~/scripts ~/work ~/dev ~/recordings
 
 cp -a config/. /home/ash/.config/
