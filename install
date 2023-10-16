@@ -29,19 +29,20 @@ yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar
 
 timedatectl set-timezone Europe/London
 
-sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 echo 'deny = 5' | sudo tee -a /etc/security/faillock.conf
+
+sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 cp other/.zshrc /home/ash/.zshrc
 cp other/.vimrc /home/ash/.vimrc
-
-cp -R /mnt/storage/ssh-backup ~/.ssh
-sudo chmod -R 600 ~/.ssh/work*  ~/.ssh/personal* 
 
 git config --global user.name "ashdevelops"
 git config --global user.email "ash.smith.dev@gmail.com"
 
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now plexmediaserver
+
+# cp -R /mnt/storage/ssh-backup ~/.ssh
+# sudo chmod -R 600 ~/.ssh/work*  ~/.ssh/personal* 
+
 sudo systemctl enable --now sddm.service
