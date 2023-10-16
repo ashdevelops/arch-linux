@@ -6,6 +6,9 @@ localectl --no-convert set-x11-keymap gb pc104
 
 sudo pacman -Syu --noconfirm - < pkglist
 
+sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl enable --now mariadb.service
+
 mkdir -p ~/scripts ~/work ~/dev ~/recordings
 
 cp -a config/. /home/ash/.config/
