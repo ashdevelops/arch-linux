@@ -51,3 +51,4 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 docker
 docker-compose
+mariadb
