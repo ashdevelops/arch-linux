@@ -46,8 +46,7 @@ code
 wget
 xdg-desktop-portal-wlr
 wf-recorder
-vim
-aria2 
+vim 
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 docker
