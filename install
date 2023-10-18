@@ -37,6 +37,8 @@ sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/insta
 
 cp other/.zshrc /home/ash/.zshrc
 
+sudo usermod -a -G vboxusers ash
+
 git config --global user.name "ashdevelops"
 git config --global user.email "ash.smith.dev@gmail.com"
 
