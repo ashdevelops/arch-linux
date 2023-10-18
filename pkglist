@@ -37,6 +37,7 @@ qbittorrent
 yt-dlp
 cowsay
 jq
+virtualbox-host-modules-arch
 virtualbox
 usbmuxd
 libimobiledevice
