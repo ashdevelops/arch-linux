@@ -4,7 +4,7 @@
     "spacing": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/scratchpad"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["disk", "disk#primary", "custom/habit-days", "custom/screen-record", "keyboard-state", "wireplumber", "cpu", "memory", "tray", "clock", "custom/power"],
+    "modules-right": ["disk", "disk#primary", "custom/habit-days", "custom/hubstaff", "custom/screen-record", "keyboard-state", "wireplumber", "cpu", "memory", "tray", "clock", "custom/power"],
 
     "hyprland/workspaces": {
         "all-outputs": true
@@ -71,6 +71,14 @@
     "custom/power": {
         "format": "",
         "on-click": "wlogout",
+        "tooltip": false
+    },
+
+    "custom/hubstaff": {
+        "format": "{}",
+        "interval": 1,
+        "exec": "$HOME/scripts/hubstaff/status",
+        "on-click": "$HOME/scripts/hubstaff/status",
         "tooltip": false
     },
 
