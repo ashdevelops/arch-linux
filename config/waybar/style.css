@@ -76,7 +76,8 @@ button {
 #mpd,
 #custom-power,
 #custom-screen-record,
-#custom-habit-days {
+#custom-habit-days,
+#custom-hubstaff {
     margin: 5px 4px;
     padding: 8px 15px;
     border-radius: 4px;
@@ -121,8 +122,12 @@ label:focus {
     background-color: #444444;
 }
 
-#custom-habit-days {
+#custom-hubstaff {
     background-color:#0051ff;
+}
+
+#custom-habit-days {
+    background-color:#0aca0a;
 }
 
 #backlight {
