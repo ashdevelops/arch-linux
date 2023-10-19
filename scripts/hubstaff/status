@@ -1,0 +1,5 @@
+#!/bin/bash
+
+PROJECT_NAME=$(~/Hubstaff/HubstaffCLI.bin.x86_64 status | jq -r .active_project.name )
+TIME_SPENT=$(~/Hubstaff/HubstaffCLI.bin.x86_64 status | jq -r .active_project.tracked_today )
+echo "$PROJECT_NAME - $TIME_SPENT"
