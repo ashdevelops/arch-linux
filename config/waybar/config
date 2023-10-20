@@ -78,7 +78,8 @@
         "format": "{}",
         "interval": 1,
         "exec": "$HOME/scripts/hubstaff/status",
-        "on-click": "$HOME/scripts/hubstaff/status",
+        "exec-if": "$HOME/scripts/hubstaff/isRunning",
+        "on-click": "hyprctl dispatch focuswindow Hubstaff",
         "tooltip": false
     },
 
