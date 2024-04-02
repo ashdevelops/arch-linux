@@ -1,8 +1,0 @@
-#!/bin/bash
-
-STATUS_JSON=$(~/Hubstaff/HubstaffCLI.bin.x86_64 status)
-IS_TRACKING=$(jq -r .tracking <<< $STATUS_JSON)
-
-if [ 'false' = "$IS_TRACKING" ]; then 
-    exit 1
-fi
