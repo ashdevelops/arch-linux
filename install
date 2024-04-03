@@ -10,6 +10,8 @@ sudo pacman -Syu vim wf-recorder xdg-desktop-portal xdg-desktop-portal-wlr
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo systemctl enable --now mariadb.service
 
+sudo usermod -a -G input ash
+
 mkdir -p ~/scripts ~/work ~/dev ~/recordings
 
 cp -a config/. /home/ash/.config/
