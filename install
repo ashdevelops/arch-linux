@@ -21,7 +21,7 @@ sudo chmod +x /home/ash/scripts/*
 
 sudo mkdir /mnt/storage
 
-echo "/dev/disk/by-uuid/eab3b3c5-7473-4308-bf3a-633def59c06c /mnt/storage auto nosuid,nodev,nofail,x-gvfs-show 0 0" | sudo tee -a /etc/fstab
+echo "\n/dev/disk/by-uuid/eab3b3c5-7473-4308-bf3a-633def59c06c /mnt/storage auto nosuid,nodev,nofail,x-gvfs-show 0 0" | sudo tee -a /etc/fstab
 systemctl daemon-reload
 sudo mount -a
 
