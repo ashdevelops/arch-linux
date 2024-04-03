@@ -1,10 +1,10 @@
-export ZSH="$HOME/.oh-my-zsh"
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
 
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 neofetch
 
