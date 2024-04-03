@@ -4,10 +4,9 @@ if pgrep -x "wf-recorder" > /dev/null
 then
     killall -s SIGINT wf-recorder
     FILE=$(ls -t $RECORDPATH | head -n1)
-    notify-send "Screen Recording Complete" "Saved to $FILE"
-    wl-copy $FILE
 	while [ ! -z $(pgrep -x wf-recorder) ]; do wait; done
 	pkill -RTMIN+8 waybar
+    notify-send -t 1000 "Screen Recording Complete" "Saved to $FILE"
     exit
 fi
 
