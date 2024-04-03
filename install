@@ -25,7 +25,7 @@ systemctl daemon-reload
 sudo mount -a
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-yay -Syu jetbrains-toolbox php composer spotify plex-media-server zsh vlc waybar-git swaylock-effects swww cava-git wlogout google-chrome dotool aria2 docker-desktop --noconfirm
+yay -Syu jetbrains-toolbox spotify plex-media-server zsh vlc waybar-git swaylock-effects swww cava-git wlogout google-chrome dotool aria2 docker-desktop --noconfirm
 
 timedatectl set-timezone Europe/London
 
