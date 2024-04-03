@@ -10,6 +10,8 @@ ZSH_THEME="random"
 
 plugins=(git)
 
+source $ZSH/oh-my-zsh.sh
+
 export PATH=$PATH:"$HOME/.local/share/JetBrains/Toolbox/scripts"
 export PATH=$PATH:"$HOME/scripts"
 export PATH=$PATH:"$HOME/.local/share/JetBrains/Toolbox/scripts"
