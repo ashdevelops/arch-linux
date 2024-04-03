@@ -6,7 +6,7 @@ then
     FILE=$(ls -t $RECORDPATH | head -n1)
 	while [ ! -z $(pgrep -x wf-recorder) ]; do wait; done
 	pkill -RTMIN+8 waybar
-    notify-send -t 1000 "Screen Recording Complete" "Saved to $FILE"
+    notify-send -t 5000 "Screen Recording Complete" "Saved to $FILE"
     exit
 fi
 
