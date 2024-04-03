@@ -2,7 +2,7 @@
 
 if pgrep -x "wf-recorder" > /dev/null
 then
-    echo ""
+    echo " Recording..."
 else
     echo ""
 fi
