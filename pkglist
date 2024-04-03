@@ -31,7 +31,7 @@ wl-clipboard
 grim
 slurp
 mpv
-zenity
+yad
 swappy
 qbittorrent
 yt-dlp
