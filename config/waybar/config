@@ -70,7 +70,7 @@
 
     "custom/power": {
         "format": "",
-        "on-click": "hyprctl dispatch exit",
+        "on-click": "wlogout --buttons-per-row 2",
         "tooltip": false
     },
 
