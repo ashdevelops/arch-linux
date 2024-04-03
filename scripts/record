@@ -11,7 +11,7 @@ then
     exit
 fi
 
-if ! zenity --question --text="Are you sure you want to start recording?"; then
+if ! yad --title='Confirm?' --center --fixed --undecorated --button=Yes:0 --button=No:1 --text="You sure you wanna $1?" --text-align=center --align=center --justify=center --buttons-layout=center; then
     exit
 fi
 
