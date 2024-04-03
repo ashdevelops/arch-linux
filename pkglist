@@ -45,11 +45,6 @@ ifuse
 virtualbox-guest-iso
 code
 wget
-xdg-desktop-portal-wlr
-wf-recorder
-vim 
-xdg-desktop-portal
-xdg-desktop-portal-wlr
 docker
 docker-compose
 mariadb
