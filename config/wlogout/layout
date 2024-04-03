@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "yad --calendar",
+    "action" : "swaylock --config ~/.config/swaylock/config",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -14,14 +14,14 @@
 
 {
     "label" : "shutdown",
-    "action" : "yad --calendar",
+    "action" : "shutdown",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 
 {
     "label" : "reboot",
-    "action" : "yad --calendar",
+    "action" : "reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }
