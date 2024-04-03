@@ -55,4 +55,6 @@ docker-compose
 mariadb
 nodejs
 npm
+php
+composer
 papirus-icon-theme
