@@ -18,7 +18,7 @@ export PATH=$PATH:"$HOME/.local/share/JetBrains/Toolbox/scripts"
 export PATH=$PATH:"$HOME/scripts"
 
 export HABBO="/mnt/storage/dev/habbo"
-export SADIE="/mnt/storage/dev/habbo/sadie
+export SADIE="/mnt/storage/dev/habbo/sadie"
 
 alias open='f() { thunar $1 };f'
 
