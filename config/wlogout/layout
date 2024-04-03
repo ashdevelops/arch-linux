@@ -4,18 +4,21 @@
     "text" : "Lock",
     "keybind" : "l"
 }
+
 {
     "label" : "logout",
     "action" : "sleep 1; hyprctl dispatch exit",
     "text" : "Logout",
     "keybind" : "e"
 }
+
 {
     "label" : "shutdown",
     "action" : "yad --calendar",
     "text" : "Shutdown",
     "keybind" : "s"
 }
+
 {
     "label" : "reboot",
     "action" : "yad --calendar",
