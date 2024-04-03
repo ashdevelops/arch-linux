@@ -20,6 +20,8 @@ export PATH=$PATH:"$HOME/scripts"
 export HABBO="/mnt/storage/dev/habbo"
 export SADIE="/mnt/storage/dev/habbo/sadie"
 
+alias sadie='f() { ./rider $SADIE/SadieEmulator/SadieEmulator.sln };f'
+
 alias open='f() { thunar $1 };f'
 
 echo ""
