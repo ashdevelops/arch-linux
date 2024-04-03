@@ -17,4 +17,4 @@ fi
 
 FILENAME=$(date +%F_%T.mkv)
 
-wf-recorder -f $HOME/recordings/$FILENAME -g "$(slurp -c "#FFFFFF")" >/dev/null 2>&1 &
+wf-recorder -f $HOME/recordings/$FILENAME format=rgb24 -x rgb24 -p qp=0 -p crf=0 -p preset=veryslow -p tune=animation -c libx264rgb -g "$(slurp -c "#FFFFFF")" >/dev/null 2>&1 &
